@@ -15,7 +15,7 @@ connection_string = f'mongodb+srv://afif:{password}@tutorial.819uiqo.mongodb.net
 client = MongoClient(connection_string)
 
 dbs = client.list_database_names() # get list of all databases
-test_db = client.test # create a new dbs
+test_db = client.test # create a new dbs / select a dbs
 collections = test_db.list_collection_names() # get list of all collections
 
 
